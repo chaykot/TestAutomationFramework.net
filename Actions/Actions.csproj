@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net5.0</TargetFramework>
+    <TargetFramework>net10.0</TargetFramework>
 	  <SonarQubeTestProject>false</SonarQubeTestProject>
   </PropertyGroup>
 
@@ -17,6 +17,11 @@
     <Folder Include="API\" />
     <Folder Include="DB\" />
     <Folder Include="UI\Assertions\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.IdentityModel.JsonWebTokens" Version="7.7.1" />
+    <PackageReference Include="System.Text.RegularExpressions" Version="4.3.1" />
   </ItemGroup>
 
 </Project>
