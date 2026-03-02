@@ -8,7 +8,7 @@ App used for examples: https://github.com/toggle-org/sdet-challenge
 
 ## Technologies
 - .NET 10.0
-- NUnit 3
+- NUnit 4.5
 - Selenium WebDriver
 - [FluentAssertions](https://fluentassertions.com/)
 - EntityFrameworkCore
