@@ -42,12 +42,6 @@ namespace UI.Interactions.Utils
             WaitForCondition(_ => browser.IsPageLoaded(), Configuration.Wait.PageLoadTimeout, "page loaded");
         }
 
-        /// <summary>
-        /// Wait for specified <param name="condition"/>.
-        /// Test fails, if the condition isn't reached in <param name="timeoutSeconds"/>.
-        /// </summary>
-        /// <param name="conditionDescription">description of the condition, that will be displayed in the logs</param>
-        /// <param name="failMessage">message that is displayed, if the condition isn't reached</param>
         private static void WaitForCondition(
             Func<IWebDriver, bool> condition,
             double timeoutSeconds,
